@@ -1,10 +1,12 @@
 USE codeup_test_db;
 
+SELECT * FROM albums;
+
 -- The name of all albums by Pink Floyd
-SELECT * FROM codeup_test_db AS 'All albums by Pink Floyd' WHERE artist = 'Pink Floyd';
+SELECT album_name FROM albums WHERE artist = 'Pink Floyd';
 
 -- The year Sgt.Pepper's Lonely Hearts Club Band was released
-SELECT release_date FROM albums WHERE album_name = 'Sgt. Pepper''s Lonely hearts Club Band';
+SELECT release_date FROM albums WHERE album_name = 'Sgt. Pepper''s Lonely Hearts Club Band';
 
 -- The genre for Nevermind
 SELECT genre FROM albums WHERE album_name = 'Nevermind';
